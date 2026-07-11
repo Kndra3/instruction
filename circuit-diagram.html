@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IoT Ammonia Detection System - Accurate Circuit Diagram</title>
+    <title>IoT Ammonia Detection System - Educational Circuit Diagram</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             display: flex;
             justify-content: center;
@@ -23,10 +23,10 @@
 
         .container {
             width: 100%;
-            max-width: 1600px;
+            max-width: 2000px;
             background: #0f3460;
             border-radius: 12px;
-            padding: 30px;
+            padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
         }
 
@@ -34,87 +34,111 @@
             color: #00d4ff;
             text-align: center;
             margin-bottom: 10px;
-            font-size: 28px;
+            font-size: 36px;
             text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
         }
 
         .subtitle {
             color: #b0b0b0;
             text-align: center;
-            margin-bottom: 30px;
-            font-size: 14px;
+            margin-bottom: 40px;
+            font-size: 16px;
         }
 
         svg {
             width: 100%;
             height: auto;
             filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
         }
 
         .component-label {
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: bold;
+            fill: #ffffff;
+            text-anchor: middle;
+        }
+
+        .component-label-large {
+            font-size: 18px;
             font-weight: bold;
             fill: #ffffff;
             text-anchor: middle;
         }
 
         .wire-label {
-            font-size: 9px;
+            font-size: 12px;
             fill: #00d4ff;
             font-weight: bold;
         }
 
         .legend {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #00d4ff;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 3px solid #00d4ff;
         }
 
         .legend-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             color: #b0b0b0;
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .legend-color {
-            width: 30px;
-            height: 3px;
+            width: 40px;
+            height: 4px;
             border-radius: 2px;
         }
 
         .info-box {
             background: rgba(0, 212, 255, 0.1);
-            border-left: 4px solid #00d4ff;
-            padding: 15px;
-            margin-top: 20px;
+            border-left: 6px solid #00d4ff;
+            padding: 20px;
+            margin-top: 30px;
             border-radius: 4px;
             color: #b0b0b0;
-            font-size: 12px;
-            line-height: 1.6;
+            font-size: 14px;
+            line-height: 1.8;
         }
 
         .info-box strong {
             color: #00d4ff;
         }
 
+        .info-box ul {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+
+        .info-box li {
+            margin-bottom: 10px;
+        }
+
         .breadboard-label {
-            font-size: 10px;
+            font-size: 12px;
             fill: #ffff00;
+            font-weight: bold;
+        }
+
+        .pin-label {
+            font-size: 13px;
+            fill: #ffffff;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🔌 IoT Ammonia Detection System - Accurate Breadboard Wiring</h1>
-        <p class="subtitle">Complete circuit diagram with accurate breadboard connections and power rails</p>
+        <h1>🔌 IoT Ammonia Detection System</h1>
+        <p class="subtitle">Complete Educational Circuit Diagram - Grade 7 Level</p>
 
-        <svg viewBox="0 0 1800 1400" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 2400 2000" xmlns="http://www.w3.org/2000/svg">
             <!-- BACKGROUND GRID -->
             <defs>
                 <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
@@ -123,469 +147,518 @@
 
                 <!-- Wire Gradients -->
                 <linearGradient id="power-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#ff4444;stop-opacity:0.9" />
-                    <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.9" />
+                    <stop offset="0%" style="stop-color:#ff4444;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
                 </linearGradient>
 
                 <linearGradient id="ground-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#444444;stop-opacity:0.9" />
-                    <stop offset="100%" style="stop-color:#000000;stop-opacity:0.9" />
+                    <stop offset="0%" style="stop-color:#444444;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
                 </linearGradient>
 
                 <linearGradient id="signal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0.9" />
-                    <stop offset="100%" style="stop-color:#00cc00;stop-opacity:0.9" />
+                    <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00cc00;stop-opacity:1" />
                 </linearGradient>
 
                 <linearGradient id="data-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#ffff00;stop-opacity:0.9" />
-                    <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:0.9" />
+                    <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
                 </linearGradient>
 
                 <linearGradient id="i2c-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.9" />
-                    <stop offset="100%" style="stop-color:#00ccff;stop-opacity:0.9" />
+                    <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
                 </linearGradient>
             </defs>
 
             <!-- Grid Background -->
-            <rect width="1800" height="1400" fill="url(#grid)" opacity="0.05"/>
+            <rect width="2400" height="2000" fill="url(#grid)" opacity="0.08"/>
 
-            <!-- ===================== POWER BANK ===================== -->
+            <!-- ===================== TOP SECTION: POWER SOURCE ===================== -->
+            <!-- POWER BANK -->
             <g id="power-bank">
-                <rect x="50" y="20" width="140" height="70" fill="#2d5f8d" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <text x="120" y="45" class="component-label" font-size="14">POWER BANK</text>
+                <rect x="80" y="40" width="200" height="120" fill="#2d5f8d" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <text x="180" y="85" class="component-label-large">POWER BANK</text>
+                <text x="180" y="110" class="component-label" font-size="16">5V USB Power</text>
+
                 <!-- USB outputs -->
-                <circle cx="90" cy="90" r="6" fill="#ff9900" stroke="#ffaa00" stroke-width="1.5"/>
-                <circle cx="150" cy="90" r="6" fill="#ff9900" stroke="#ffaa00" stroke-width="1.5"/>
-                <text x="90" y="105" class="component-label" font-size="9">USB1</text>
-                <text x="150" y="105" class="component-label" font-size="9">USB2</text>
+                <circle cx="130" cy="160" r="10" fill="#ff9900" stroke="#ffaa00" stroke-width="2"/>
+                <circle cx="230" cy="160" r="10" fill="#ff9900" stroke="#ffaa00" stroke-width="2"/>
+                
+                <text x="130" y="195" class="component-label" font-size="14">USB 1</text>
+                <text x="230" y="195" class="component-label" font-size="14">USB 2</text>
+                
+                <text x="130" y="220" class="wire-label" font-size="12">→ Arduino</text>
+                <text x="230" y="220" class="wire-label" font-size="12">→ Mist Maker</text>
             </g>
 
-            <!-- ===================== ARDUINO UNO R3 ===================== -->
+            <!-- ===================== LEFT SECTION: ARDUINO ===================== -->
+            <!-- ARDUINO UNO R3 -->
             <g id="arduino">
-                <rect x="50" y="150" width="160" height="240" fill="#1f4788" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <text x="130" y="175" class="component-label" font-size="13">ARDUINO UNO R3</text>
+                <rect x="80" y="350" width="240" height="400" fill="#1f4788" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <text x="200" y="395" class="component-label-large" font-size="18">ARDUINO UNO R3</text>
+                <text x="200" y="425" class="component-label" font-size="14">Microcontroller</text>
 
-                <!-- Left Side Pins (Digital/Analog) -->
-                <circle cx="50" cy="200" r="4" fill="#ffaa00"/>
-                <circle cx="50" cy="225" r="4" fill="#ffaa00"/>
-                <circle cx="50" cy="250" r="4" fill="#ffaa00"/>
-                <circle cx="50" cy="275" r="4" fill="#00ff00"/>
-                <circle cx="50" cy="300" r="4" fill="#ff0000"/>
-                <circle cx="50" cy="325" r="4" fill="#ffff00"/>
-                <circle cx="50" cy="350" r="4" fill="#00ccff"/>
-                <circle cx="50" cy="375" r="4" fill="#ffaa00"/>
-
-                <!-- Right Side Pins (Power) -->
-                <circle cx="210" cy="200" r="4" fill="#ff0000"/>
-                <circle cx="210" cy="225" r="4" fill="#000000"/>
-                <circle cx="210" cy="250" r="4" fill="#ff0000"/>
-                <circle cx="210" cy="275" r="4" fill="#000000"/>
-
-                <!-- Labels -->
-                <text x="35" y="205" class="component-label" font-size="8">A0</text>
-                <text x="35" y="230" class="component-label" font-size="8">A4</text>
-                <text x="35" y="255" class="component-label" font-size="8">A5</text>
-                <text x="38" y="280" class="component-label" font-size="8">D5</text>
-                <text x="38" y="305" class="component-label" font-size="8">D6</text>
-                <text x="38" y="330" class="component-label" font-size="8">D7</text>
-                <text x="30" y="355" class="component-label" font-size="8">D10</text>
-                <text x="30" y="380" class="component-label" font-size="8">D11</text>
-
-                <text x="220" y="205" class="component-label" font-size="8">5V</text>
-                <text x="210" y="230" class="component-label" font-size="7">GND</text>
-                <text x="220" y="255" class="component-label" font-size="8">3.3V</text>
-                <text x="210" y="280" class="component-label" font-size="7">GND</text>
-            </g>
-
-            <!-- ===================== BREADBOARD ===================== -->
-            <g id="breadboard">
-                <!-- Breadboard Base -->
-                <rect x="300" y="150" width="900" height="600" fill="#d4a574" stroke="#8b7355" stroke-width="3" rx="6"/>
-                <text x="750" y="180" class="component-label" font-size="16" fill="#000000">SOLDERLESS BREADBOARD</text>
-
-                <!-- Positive Power Rail (Left) -->
-                <rect x="310" y="200" width="30" height="540" fill="#ff4444" opacity="0.4" stroke="#ff0000" stroke-width="2"/>
-                <text x="325" y="225" class="breadboard-label" fill="#ff0000" font-size="10">+5V</text>
-
-                <!-- Negative Ground Rail (Left) -->
-                <rect x="350" y="200" width="30" height="540" fill="#333333" opacity="0.4" stroke="#000000" stroke-width="2"/>
-                <text x="365" y="225" class="breadboard-label" fill="#000000" font-size="10">GND</text>
-
-                <!-- Main Breadboard Columns (Columns 1-10) -->
-                <g id="bb-columns">
-                    <!-- Column headers -->
-                    <text x="410" y="190" class="breadboard-label" fill="#ffffff" font-size="9">A</text>
-                    <text x="455" y="190" class="breadboard-label" fill="#ffffff" font-size="9">B</text>
-                    <text x="500" y="190" class="breadboard-label" fill="#ffffff" font-size="9">C</text>
-                    <text x="545" y="190" class="breadboard-label" fill="#ffffff" font-size="9">D</text>
-                    <text x="590" y="190" class="breadboard-label" fill="#ffffff" font-size="9">E</text>
-                    <text x="635" y="190" class="breadboard-label" fill="#ffffff" font-size="9">F</text>
-                    <text x="680" y="190" class="breadboard-label" fill="#ffffff" font-size="9">G</text>
-                    <text x="725" y="190" class="breadboard-label" fill="#ffffff" font-size="9">H</text>
-                    <text x="770" y="190" class="breadboard-label" fill="#ffffff" font-size="9">I</text>
-                    <text x="815" y="190" class="breadboard-label" fill="#ffffff" font-size="9">J</text>
-
-                    <!-- Holes for columns A-J (showing first 5 rows for clarity) -->
+                <!-- Left Side Pins -->
+                <g id="left-pins">
                     <!-- Row 1 -->
-                    <circle cx="410" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="455" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="500" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="545" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="590" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="635" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="680" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="725" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="770" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="815" cy="210" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="80" cy="470" r="6" fill="#ffaa00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="35" y="478" class="pin-label" font-size="13">A0</text>
+                    <text x="35" y="500" class="wire-label" font-size="11">(Sensor)</text>
 
                     <!-- Row 2 -->
-                    <circle cx="410" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="455" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="500" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="545" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="590" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="635" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="680" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="725" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="770" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="815" cy="235" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="80" cy="540" r="6" fill="#ffaa00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="35" y="548" class="pin-label" font-size="13">A4</text>
+                    <text x="35" y="570" class="wire-label" font-size="11">(LCD SDA)</text>
 
                     <!-- Row 3 -->
-                    <circle cx="410" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="455" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="500" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="545" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="590" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="635" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="680" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="725" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="770" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="815" cy="260" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+                    <circle cx="80" cy="610" r="6" fill="#ffaa00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="35" y="618" class="pin-label" font-size="13">A5</text>
+                    <text x="35" y="640" class="wire-label" font-size="11">(LCD SCL)</text>
 
-                    <!-- Row 4 (MQ-137 Row) -->
-                    <circle cx="410" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="455" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="500" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="545" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="590" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="635" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="680" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="725" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="770" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="815" cy="285" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+                    <!-- Row 4 -->
+                    <circle cx="80" cy="680" r="6" fill="#00ff00" stroke="#00ffff" stroke-width="2"/>
+                    <text x="38" y="688" class="pin-label" font-size="13">D5</text>
+                    <text x="38" y="710" class="wire-label" font-size="11">(Green LED)</text>
 
-                    <!-- Row 5 (LCD Row) -->
-                    <circle cx="410" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="455" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="500" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="545" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="590" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="635" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="680" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="725" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="770" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
-                    <circle cx="815" cy="310" r="3" fill="none" stroke="#8b7355" stroke-width="1.5"/>
+                    <!-- Row 5 -->
+                    <circle cx="80" cy="750" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                    <text x="38" y="758" class="pin-label" font-size="13">D6</text>
+                    <text x="38" y="780" class="wire-label" font-size="11">(Red LED)</text>
                 </g>
 
-                <!-- Positive Power Rail (Right) -->
-                <rect x="850" y="200" width="30" height="540" fill="#ff4444" opacity="0.4" stroke="#ff0000" stroke-width="2"/>
-                <text x="865" y="225" class="breadboard-label" fill="#ff0000" font-size="10">+5V</text>
+                <!-- Right Side Pins -->
+                <g id="right-pins">
+                    <!-- Row 1 -->
+                    <circle cx="320" cy="470" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                    <text x="330" y="478" class="pin-label" font-size="13">5V</text>
+                    <text x="330" y="500" class="wire-label" font-size="11">(Power)</text>
 
-                <!-- Negative Ground Rail (Right) -->
-                <rect x="890" y="200" width="30" height="540" fill="#333333" opacity="0.4" stroke="#000000" stroke-width="2"/>
-                <text x="905" y="225" class="breadboard-label" fill="#000000" font-size="10">GND</text>
+                    <!-- Row 2 -->
+                    <circle cx="320" cy="540" r="6" fill="#000000" stroke="#333333" stroke-width="2"/>
+                    <text x="330" y="548" class="pin-label" font-size="13">GND</text>
+                    <text x="330" y="570" class="wire-label" font-size="11">(Ground)</text>
 
-                <!-- Component Labels on Breadboard -->
-                <text x="410" y="320" class="breadboard-label" fill="#ffff00" font-size="9">MQ-137</text>
-                <text x="410" y="345" class="breadboard-label" fill="#ffff00" font-size="9">LCD I2C</text>
-                <text x="410" y="370" class="breadboard-label" fill="#ffff00" font-size="9">DFPlayer</text>
-                <text x="410" y="395" class="breadboard-label" fill="#ffff00" font-size="9">Relay</text>
+                    <!-- Row 3 -->
+                    <circle cx="320" cy="610" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="330" y="618" class="pin-label" font-size="13">D7</text>
+                    <text x="330" y="640" class="wire-label" font-size="11">(Relay)</text>
+
+                    <!-- Row 4 -->
+                    <circle cx="320" cy="680" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="330" y="688" class="pin-label" font-size="13">D10</text>
+                    <text x="330" y="710" class="wire-label" font-size="11">(DFPlayer TX)</text>
+
+                    <!-- Row 5 -->
+                    <circle cx="320" cy="750" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
+                    <text x="330" y="758" class="pin-label" font-size="13">D11</text>
+                    <text x="330" y="780" class="wire-label" font-size="11">(DFPlayer RX)</text>
+                </g>
             </g>
 
-            <!-- ===================== MQ-137 AMMONIA SENSOR ===================== -->
+            <!-- ===================== CENTER-LEFT: MQ-137 SENSOR ===================== -->
+            <!-- MQ-137 AMMONIA SENSOR -->
             <g id="mq137">
-                <circle cx="1100" cy="240" r="40" fill="#3d5a73" stroke="#00d4ff" stroke-width="2"/>
-                <text x="1100" y="235" class="component-label" font-size="12">MQ-137</text>
-                <text x="1100" y="250" class="component-label" font-size="10">AMMONIA</text>
+                <circle cx="680" cy="450" r="60" fill="#3d5a73" stroke="#00d4ff" stroke-width="3"/>
+                <text x="680" y="440" class="component-label-large" font-size="18">MQ-137</text>
+                <text x="680" y="465" class="component-label" font-size="14">Ammonia Sensor</text>
 
                 <!-- Sensor Pins -->
-                <circle cx="1100" cy="200" r="4" fill="#ff0000"/>
-                <circle cx="1060" cy="280" r="4" fill="#000000"/>
-                <circle cx="1100" cy="280" r="4" fill="#00ff00"/>
-                <circle cx="1140" cy="280" r="4" fill="#ffff00"/>
+                <circle cx="680" cy="370" r="7" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                <circle cx="620" cy="530" r="7" fill="#000000" stroke="#333333" stroke-width="2"/>
+                <circle cx="680" cy="530" r="7" fill="#00ff00" stroke="#00ffff" stroke-width="2"/>
+                <circle cx="740" cy="530" r="7" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
 
-                <text x="1100" y="190" class="component-label" font-size="8">VCC</text>
-                <text x="1050" y="295" class="component-label" font-size="8">GND</text>
-                <text x="1100" y="295" class="component-label" font-size="8">AO</text>
-                <text x="1140" y="295" class="component-label" font-size="8">DO</text>
+                <text x="680" y="340" class="component-label" font-size="13">VCC (Red)</text>
+                <text x="600" y="560" class="component-label" font-size="13">GND (Black)</text>
+                <text x="680" y="560" class="component-label" font-size="13">AO (Green)</text>
+                <text x="740" y="560" class="component-label" font-size="13">DO</text>
             </g>
 
-            <!-- ===================== LCD 16x2 WITH I2C ===================== -->
+            <!-- ===================== CENTER: BREADBOARD ===================== -->
+            <!-- BREADBOARD MAIN COMPONENT -->
+            <g id="breadboard">
+                <!-- Breadboard Base -->
+                <rect x="400" y="350" width="1400" height="800" fill="#d4a574" stroke="#8b7355" stroke-width="4" rx="8"/>
+                <text x="1100" y="395" class="component-label-large" font-size="22">SOLDERLESS BREADBOARD</text>
+
+                <!-- Left Power Rail Section -->
+                <g id="left-power-section">
+                    <!-- Positive Power Rail (Red) -->
+                    <rect x="420" y="420" width="50" height="700" fill="#ff4444" opacity="0.5" stroke="#ff0000" stroke-width="3" rx="4"/>
+                    <text x="445" y="460" class="breadboard-label" fill="#ff0000" font-size="16">+5V</text>
+                    <text x="445" y="485" class="component-label" font-size="12">POWER</text>
+
+                    <!-- Negative Ground Rail (Black) -->
+                    <rect x="480" y="420" width="50" height="700" fill="#333333" opacity="0.5" stroke="#000000" stroke-width="3" rx="4"/>
+                    <text x="505" y="460" class="breadboard-label" fill="#00ff00" font-size="16">GND</text>
+                    <text x="505" y="485" class="component-label" font-size="12">GROUND</text>
+                </g>
+
+                <!-- Main Breadboard Area -->
+                <g id="breadboard-grid">
+                    <!-- Column Labels -->
+                    <text x="570" y="405" class="breadboard-label" fill="#ffffff" font-size="14">A</text>
+                    <text x="650" y="405" class="breadboard-label" fill="#ffffff" font-size="14">B</text>
+                    <text x="730" y="405" class="breadboard-label" fill="#ffffff" font-size="14">C</text>
+                    <text x="810" y="405" class="breadboard-label" fill="#ffffff" font-size="14">D</text>
+                    <text x="890" y="405" class="breadboard-label" fill="#ffffff" font-size="14">E</text>
+                    <text x="970" y="405" class="breadboard-label" fill="#ffffff" font-size="14">F</text>
+                    <text x="1050" y="405" class="breadboard-label" fill="#ffffff" font-size="14">G</text>
+                    <text x="1130" y="405" class="breadboard-label" fill="#ffffff" font-size="14">H</text>
+                    <text x="1210" y="405" class="breadboard-label" fill="#ffffff" font-size="14">I</text>
+                    <text x="1290" y="405" class="breadboard-label" fill="#ffffff" font-size="14">J</text>
+
+                    <!-- Row Labels (showing major rows) -->
+                    <text x="360" y="450" class="breadboard-label" fill="#ffffff" font-size="12">Row 1</text>
+                    <text x="360" y="530" class="breadboard-label" fill="#ffffff" font-size="12">Row 2</text>
+                    <text x="360" y="610" class="breadboard-label" fill="#ffffff" font-size="12">Row 3</text>
+                    <text x="360" y="690" class="breadboard-label" fill="#ffffff" font-size="12">Row 4</text>
+                    <text x="360" y="770" class="breadboard-label" fill="#ffffff" font-size="12">Row 5</text>
+                    <text x="360" y="850" class="breadboard-label" fill="#ffffff" font-size="12">Row 6</text>
+
+                    <!-- Connection holes - Row 1 -->
+                    <circle cx="570" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="445" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+
+                    <!-- Connection holes - Row 2 -->
+                    <circle cx="570" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="525" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+
+                    <!-- Connection holes - Row 3 -->
+                    <circle cx="570" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="605" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+
+                    <!-- Connection holes - Row 4 -->
+                    <circle cx="570" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="685" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+
+                    <!-- Connection holes - Row 5 -->
+                    <circle cx="570" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="765" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+
+                    <!-- Connection holes - Row 6 -->
+                    <circle cx="570" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="650" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="730" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="810" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="890" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="970" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1050" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1130" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1210" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                    <circle cx="1290" cy="845" r="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+                </g>
+
+                <!-- Right Power Rail Section -->
+                <g id="right-power-section">
+                    <!-- Positive Power Rail (Red) -->
+                    <rect x="1320" y="420" width="50" height="700" fill="#ff4444" opacity="0.5" stroke="#ff0000" stroke-width="3" rx="4"/>
+                    <text x="1345" y="460" class="breadboard-label" fill="#ff0000" font-size="16">+5V</text>
+
+                    <!-- Negative Ground Rail (Black) -->
+                    <rect x="1380" y="420" width="50" height="700" fill="#333333" opacity="0.5" stroke="#000000" stroke-width="3" rx="4"/>
+                    <text x="1405" y="460" class="breadboard-label" fill="#00ff00" font-size="16">GND</text>
+                </g>
+            </g>
+
+            <!-- ===================== RIGHT SECTION: COMPONENTS ===================== -->
+
+            <!-- LCD DISPLAY -->
             <g id="lcd">
-                <rect x="1050" y="340" width="140" height="100" fill="#2d4a6f" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <rect x="1065" y="355" width="110" height="60" fill="#000080" opacity="0.7"/>
-                <text x="1120" y="385" class="component-label" font-size="11">LCD 16×2</text>
-                <text x="1120" y="400" class="component-label" font-size="9">I²C Display</text>
+                <rect x="1580" y="370" width="180" height="140" fill="#2d4a6f" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <rect x="1600" y="385" width="140" height="85" fill="#000080" opacity="0.8" stroke="#00ffff" stroke-width="2"/>
+                <text x="1670" y="445" class="component-label-large" font-size="16">LCD 16×2</text>
+                <text x="1670" y="465" class="component-label" font-size="13">Display</text>
 
                 <!-- LCD Pins -->
-                <circle cx="1050" cy="355" r="3" fill="#ff0000"/>
-                <circle cx="1050" cy="375" r="3" fill="#000000"/>
-                <circle cx="1050" cy="395" r="3" fill="#00ffff"/>
-                <circle cx="1050" cy="415" r="3" fill="#00ffff"/>
+                <circle cx="1580" cy="395" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                <circle cx="1580" cy="445" r="6" fill="#000000" stroke="#333333" stroke-width="2"/>
+                <circle cx="1580" cy="495" r="6" fill="#00ffff" stroke="#00ffff" stroke-width="2"/>
 
-                <text x="1020" y="358" class="component-label" font-size="8">VCC</text>
-                <text x="1020" y="378" class="component-label" font-size="8">GND</text>
-                <text x="1025" y="398" class="component-label" font-size="8">SDA</text>
-                <text x="1025" y="418" class="component-label" font-size="8">SCL</text>
+                <text x="1530" y="403" class="component-label" font-size="12">VCC</text>
+                <text x="1530" y="453" class="component-label" font-size="12">GND</text>
+                <text x="1535" y="503" class="component-label" font-size="12">I²C</text>
             </g>
 
-            <!-- ===================== DFPLAYER MINI ===================== -->
+            <!-- DFPlayer AUDIO MODULE -->
             <g id="dfplayer">
-                <rect x="1050" y="480" width="140" height="120" fill="#2d4a6f" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <text x="1120" y="510" class="component-label" font-size="12">DFPlayer</text>
-                <text x="1120" y="525" class="component-label" font-size="10">Mini Audio</text>
+                <rect x="1580" y="560" width="180" height="160" fill="#2d4a6f" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <text x="1670" y="600" class="component-label-large" font-size="16">DFPlayer</text>
+                <text x="1670" y="625" class="component-label" font-size="13">Mini Audio</text>
 
                 <!-- DFPlayer Pins -->
-                <circle cx="1050" cy="490" r="3" fill="#ff0000"/>
-                <circle cx="1050" cy="510" r="3" fill="#000000"/>
-                <circle cx="1050" cy="530" r="3" fill="#ffff00"/>
-                <circle cx="1050" cy="550" r="3" fill="#00ff00"/>
-                <circle cx="1050" cy="570" r="3" fill="#ff9900"/>
-                <circle cx="1050" cy="590" r="3" fill="#ff9900"/>
+                <circle cx="1580" cy="575" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                <circle cx="1580" cy="615" r="6" fill="#000000" stroke="#333333" stroke-width="2"/>
+                <circle cx="1580" cy="655" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
+                <circle cx="1580" cy="695" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
 
-                <text x="1020" y="493" class="component-label" font-size="8">VCC</text>
-                <text x="1020" y="513" class="component-label" font-size="8">GND</text>
-                <text x="1025" y="533" class="component-label" font-size="8">TX</text>
-                <text x="1025" y="553" class="component-label" font-size="8">RX</text>
-                <text x="1015" y="573" class="component-label" font-size="8">SPK+</text>
-                <text x="1015" y="593" class="component-label" font-size="8">SPK−</text>
+                <text x="1530" y="583" class="component-label" font-size="12">VCC</text>
+                <text x="1530" y="623" class="component-label" font-size="12">GND</text>
+                <text x="1535" y="663" class="component-label" font-size="12">TX</text>
+                <text x="1535" y="703" class="component-label" font-size="12">RX</text>
             </g>
 
-            <!-- ===================== RELAY MODULE ===================== -->
+            <!-- RELAY MODULE -->
             <g id="relay">
-                <rect x="1270" y="420" width="130" height="140" fill="#2d4a6f" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <text x="1335" y="450" class="component-label" font-size="12">RELAY</text>
-                <text x="1335" y="465" class="component-label" font-size="10">MODULE</text>
+                <rect x="1580" y="770" width="180" height="160" fill="#2d4a6f" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <text x="1670" y="810" class="component-label-large" font-size="16">RELAY</text>
+                <text x="1670" y="835" class="component-label" font-size="13">Module</text>
 
                 <!-- Relay Pins -->
-                <circle cx="1270" cy="430" r="3" fill="#ff0000"/>
-                <circle cx="1270" cy="450" r="3" fill="#000000"/>
-                <circle cx="1270" cy="470" r="3" fill="#ffff00"/>
-                <circle cx="1400" cy="430" r="3" fill="#ff0000"/>
-                <circle cx="1400" cy="450" r="3" fill="#ff9900"/>
-                <circle cx="1400" cy="470" r="3" fill="#00ff00"/>
+                <circle cx="1580" cy="785" r="6" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                <circle cx="1580" cy="825" r="6" fill="#000000" stroke="#333333" stroke-width="2"/>
+                <circle cx="1580" cy="865" r="6" fill="#ffff00" stroke="#ffdd00" stroke-width="2"/>
 
-                <text x="1240" y="433" class="component-label" font-size="8">VCC</text>
-                <text x="1240" y="453" class="component-label" font-size="8">GND</text>
-                <text x="1245" y="473" class="component-label" font-size="8">IN</text>
-                <text x="1405" y="433" class="component-label" font-size="8">COM</text>
-                <text x="1405" y="453" class="component-label" font-size="8">NO</text>
-                <text x="1405" y="473" class="component-label" font-size="8">NC</text>
+                <text x="1530" y="793" class="component-label" font-size="12">VCC</text>
+                <text x="1530" y="833" class="component-label" font-size="12">GND</text>
+                <text x="1540" y="873" class="component-label" font-size="12">IN</text>
             </g>
 
-            <!-- ===================== GREEN LED ===================== -->
+            <!-- ===================== BOTTOM SECTION: INDICATORS & OUTPUT ===================== -->
+
+            <!-- GREEN LED -->
             <g id="green-led">
-                <circle cx="1100" cy="750" r="18" fill="#00cc00" opacity="0.3" stroke="#00ff00" stroke-width="2"/>
-                <circle cx="1100" cy="750" r="10" fill="#00ff00"/>
-                <text x="1100" y="830" class="component-label" font-size="11">GREEN LED (D5)</text>
+                <circle cx="500" cy="1350" r="30" fill="#00cc00" opacity="0.4" stroke="#00ff00" stroke-width="3"/>
+                <circle cx="500" cy="1350" r="18" fill="#00ff00"/>
+                <text x="500" y="1420" class="component-label-large" font-size="16">GREEN LED</text>
+                <text x="500" y="1445" class="component-label" font-size="13">Status: NORMAL</text>
+                
                 <!-- Resistor -->
-                <rect x="1082" y="690" width="36" height="10" fill="none" stroke="#ff9900" stroke-width="2" rx="2"/>
-                <text x="1100" y="683" class="component-label" font-size="9">220Ω</text>
+                <rect x="475" y="1230" width="50" height="14" fill="none" stroke="#ff9900" stroke-width="3" rx="3"/>
+                <text x="500" y="1215" class="component-label" font-size="13">220Ω</text>
+                <text x="500" y="1200" class="wire-label" font-size="12">← Pin D5</text>
             </g>
 
-            <!-- ===================== RED LED ===================== -->
+            <!-- RED LED -->
             <g id="red-led">
-                <circle cx="1250" cy="750" r="18" fill="#ff0000" opacity="0.3" stroke="#ff4444" stroke-width="2"/>
-                <circle cx="1250" cy="750" r="10" fill="#ff0000"/>
-                <text x="1250" y="830" class="component-label" font-size="11">RED LED (D6)</text>
+                <circle cx="800" cy="1350" r="30" fill="#ff0000" opacity="0.4" stroke="#ff4444" stroke-width="3"/>
+                <circle cx="800" cy="1350" r="18" fill="#ff0000"/>
+                <text x="800" y="1420" class="component-label-large" font-size="16">RED LED</text>
+                <text x="800" y="1445" class="component-label" font-size="13">Alert: HIGH AMMONIA</text>
+                
                 <!-- Resistor -->
-                <rect x="1232" y="690" width="36" height="10" fill="none" stroke="#ff9900" stroke-width="2" rx="2"/>
-                <text x="1250" y="683" class="component-label" font-size="9">220Ω</text>
+                <rect x="775" y="1230" width="50" height="14" fill="none" stroke="#ff9900" stroke-width="3" rx="3"/>
+                <text x="800" y="1215" class="component-label" font-size="13">220Ω</text>
+                <text x="800" y="1200" class="wire-label" font-size="12">← Pin D6</text>
             </g>
 
-            <!-- ===================== MIST MAKER ===================== -->
+            <!-- SPEAKER -->
+            <g id="speaker">
+                <path d="M 1100 1300 L 1050 1360 L 1050 1400 L 1100 1460 L 1125 1435 L 1125 1325 Z" fill="#8b7355" stroke="#d4a574" stroke-width="3"/>
+                <text x="1100" y="1510" class="component-label-large" font-size="16">SPEAKER</text>
+                <text x="1100" y="1535" class="component-label" font-size="13">Audio Output</text>
+            </g>
+
+            <!-- MIST MAKER -->
             <g id="mist-maker">
-                <rect x="1350" y="730" width="160" height="100" fill="#2d4a6f" stroke="#00d4ff" stroke-width="2" rx="4"/>
-                <text x="1430" y="765" class="component-label" font-size="12">MIST MAKER</text>
-                <text x="1430" y="780" class="component-label" font-size="10">Ultrasonic</text>
+                <rect x="1350" y="1280" width="220" height="140" fill="#2d4a6f" stroke="#00d4ff" stroke-width="3" rx="6"/>
+                <text x="1460" y="1320" class="component-label-large" font-size="16">MIST MAKER</text>
+                <text x="1460" y="1345" class="component-label" font-size="13">Ultrasonic</text>
 
                 <!-- Mist Maker Pins -->
-                <circle cx="1350" cy="750" r="4" fill="#ff0000"/>
-                <circle cx="1350" cy="800" r="4" fill="#000000"/>
+                <circle cx="1350" cy="1300" r="7" fill="#ff0000" stroke="#ff4444" stroke-width="2"/>
+                <circle cx="1350" cy="1360" r="7" fill="#000000" stroke="#333333" stroke-width="2"/>
 
-                <text x="1315" y="753" class="component-label" font-size="8">+</text>
-                <text x="1310" y="803" class="component-label" font-size="8">−</text>
+                <text x="1310" y="1308" class="component-label" font-size="13">+ (Red)</text>
+                <text x="1310" y="1368" class="component-label" font-size="13">− (Black)</text>
             </g>
 
-            <!-- ===================== SPEAKER ===================== -->
-            <g id="speaker">
-                <path d="M 1050 1100 L 1020 1130 L 1020 1160 L 1050 1190 L 1065 1175 L 1065 1115 Z" fill="#8b7355" stroke="#d4a574" stroke-width="2"/>
-                <text x="1050" y="1220" class="component-label" font-size="11">SPEAKER</text>
-            </g>
+            <!-- ===================== CONNECTION WIRES ===================== -->
 
-            <!-- ===================== ACCURATE BREADBOARD CONNECTIONS ===================== -->
+            <!-- 1. Arduino 5V to Breadboard +5V Rail -->
+            <path d="M 320 470 L 380 470 L 380 445 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="360" y="450" class="wire-label" font-size="13">① 5V Power</text>
 
-            <!-- MQ-137 VCC (Red) to Breadboard +5V Rail -->
-            <path d="M 1100 200 L 1100 100 L 330 100 L 330 210" stroke="url(#power-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="700" y="95" class="wire-label">MQ-137 VCC → +5V Rail</text>
+            <!-- 2. Arduino GND to Breadboard GND Rail -->
+            <path d="M 320 540 L 380 540 L 380 865 L 445 865" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="360" y="700" class="wire-label" font-size="13">② Ground</text>
 
-            <!-- MQ-137 GND (Black) to Breadboard GND Rail -->
-            <path d="M 1060 280 L 1060 350 L 370 350 L 370 700" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="650" y="370" class="wire-label">MQ-137 GND → GND Rail</text>
+            <!-- 3. MQ-137 VCC to Breadboard +5V -->
+            <path d="M 680 370 L 680 300 L 445 300 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="520" y="320" class="wire-label" font-size="13">③ MQ VCC</text>
 
-            <!-- MQ-137 AO (Green) to Breadboard Column for Arduino A0 -->
-            <path d="M 1100 280 L 1100 350 L 500 350 L 500 285" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="370" class="wire-label">MQ-137 AO → Breadboard</text>
+            <!-- 4. MQ-137 GND to Breadboard GND -->
+            <path d="M 620 530 L 550 530 L 550 950 L 505 950" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="520" y="740" class="wire-label" font-size="13">④ MQ GND</text>
 
-            <!-- Arduino A0 to Breadboard (MQ-137 signal) -->
-            <path d="M 50 200 L 0 200 L 0 120 L 500 120 L 500 285" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="200" y="140" class="wire-label">A0 → Column</text>
+            <!-- 5. MQ-137 AO to Arduino A0 -->
+            <path d="M 680 530 L 680 600 L 400 600 L 400 610 L 80 610 L 80 470" stroke="url(#signal-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="520" y="615" class="wire-label" font-size="13">⑤ Sensor Signal</text>
 
-            <!-- LCD VCC (Red) to Breadboard +5V Rail -->
-            <path d="M 1050 355 L 980 355 L 980 110 L 330 110 L 330 210" stroke="url(#power-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="750" y="90" class="wire-label">LCD VCC → +5V</text>
+            <!-- 6. LCD VCC to Breadboard +5V -->
+            <path d="M 1580 395 L 1460 395 L 1460 270 L 445 270 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="290" class="wire-label" font-size="13">⑥ LCD VCC</text>
 
-            <!-- LCD GND (Black) to Breadboard GND Rail -->
-            <path d="M 1050 375 L 980 375 L 980 360 L 370 360 L 370 700" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="700" y="380" class="wire-label">LCD GND → GND</text>
+            <!-- 7. LCD GND to Breadboard GND -->
+            <path d="M 1580 445 L 1460 445 L 1460 920 L 505 920" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="680" class="wire-label" font-size="13">⑦ LCD GND</text>
 
-            <!-- LCD SDA (Cyan) to Arduino A4 via Breadboard -->
-            <path d="M 1050 395 L 950 395 L 950 330 L 545 330 L 545 310" stroke="url(#i2c-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="350" class="wire-label">LCD SDA → A4</text>
+            <!-- 8. LCD I²C (SDA/SCL) to Arduino A4/A5 -->
+            <path d="M 1580 495 L 1480 495 L 1480 820 L 730 820 L 730 800 L 80 800 L 80 540" stroke="url(#i2c-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="610" class="wire-label" font-size="13">⑧ LCD I²C</text>
 
-            <!-- LCD SCL (Cyan) to Arduino A5 via Breadboard -->
-            <path d="M 1050 415 L 940 415 L 940 340 L 545 340 L 545 310" stroke="url(#i2c-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="360" class="wire-label">LCD SCL → A5</text>
+            <!-- 9. DFPlayer VCC to Breadboard +5V -->
+            <path d="M 1580 575 L 1480 575 L 1480 240 L 445 240 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="360" class="wire-label" font-size="13">⑨ DFPlayer VCC</text>
 
-            <!-- Arduino A4 to Breadboard -->
-            <path d="M 50 225 L 20 225 L 20 95 L 545 95 L 545 310" stroke="url(#i2c-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="250" y="150" class="wire-label">A4 SDA</text>
+            <!-- 10. DFPlayer GND to Breadboard GND -->
+            <path d="M 1580 615 L 1480 615 L 1480 890 L 505 890" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="750" class="wire-label" font-size="13">⑩ DFPlayer GND</text>
 
-            <!-- Arduino A5 to Breadboard -->
-            <path d="M 50 250 L 10 250 L 10 105 L 545 105 L 545 310" stroke="url(#i2c-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="250" y="170" class="wire-label">A5 SCL</text>
+            <!-- 11. DFPlayer TX to Arduino D10 -->
+            <path d="M 1580 655 L 1480 655 L 1480 750 L 810 750 L 810 700 L 320 700" stroke="url(#data-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="690" class="wire-label" font-size="13">⑪ TX → D10</text>
 
-            <!-- DFPlayer VCC to Breadboard +5V -->
-            <path d="M 1050 490 L 950 490 L 950 120 L 330 120 L 330 210" stroke="url(#power-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="700" y="100" class="wire-label">DFPlayer VCC</text>
+            <!-- 12. DFPlayer RX to Arduino D11 -->
+            <path d="M 1580 695 L 1480 695 L 1480 770 L 890 770 L 890 720 L 320 720" stroke="url(#data-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="730" class="wire-label" font-size="13">⑫ RX → D11</text>
 
-            <!-- DFPlayer GND to Breadboard GND -->
-            <path d="M 1050 510 L 950 510 L 950 370 L 370 370 L 370 700" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="700" y="390" class="wire-label">DFPlayer GND</text>
+            <!-- 13. Relay VCC to Breadboard +5V -->
+            <path d="M 1580 785 L 1480 785 L 1480 210 L 445 210 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="450" class="wire-label" font-size="13">⑬ Relay VCC</text>
 
-            <!-- DFPlayer TX (Yellow) to Arduino D10 -->
-            <path d="M 1050 530 L 900 530 L 900 500 L 590 500 L 590 350" stroke="url(#data-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="510" class="wire-label">TX → D10</text>
+            <!-- 14. Relay GND to Breadboard GND -->
+            <path d="M 1580 825 L 1480 825 L 1480 860 L 505 860" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="820" class="wire-label" font-size="13">⑭ Relay GND</text>
 
-            <!-- Arduino D10 to Breadboard -->
-            <path d="M 50 350 L 0 350 L 0 510 L 590 510 L 590 350" stroke="url(#data-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="200" y="520" class="wire-label">D10</text>
+            <!-- 15. Relay IN to Arduino D7 -->
+            <path d="M 1580 865 L 1480 865 L 1480 880 L 970 880 L 970 740 L 320 740" stroke="url(#signal-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1300" y="870" class="wire-label" font-size="13">⑮ Control → D7</text>
 
-            <!-- DFPlayer RX (Green) + 1kΩ to Arduino D11 -->
-            <path d="M 1050 550 L 900 550 L 900 520 L 590 520 L 590 375" stroke="url(#data-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="530" class="wire-label">RX + 1kΩ → D11</text>
+            <!-- 16. Green LED to Arduino D5 -->
+            <path d="M 500 1300 L 500 1100 L 400 1100 L 400 750 L 80 750" stroke="url(#signal-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="420" y="1000" class="wire-label" font-size="13">⑯ D5 → Green</text>
 
-            <!-- Arduino D11 to Breadboard -->
-            <path d="M 50 375 L 0 375 L 0 530 L 590 530 L 590 375" stroke="url(#data-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="200" y="540" class="wire-label">D11</text>
+            <!-- 17. Red LED to Arduino D6 -->
+            <path d="M 800 1300 L 800 1100 L 450 1100 L 450 1050 L 350 1050 L 350 900" stroke="url(#signal-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="650" y="1020" class="wire-label" font-size="13">⑰ D6 → Red</text>
 
-            <!-- Relay VCC to Breadboard +5V -->
-            <path d="M 1270 430 L 1150 430 L 1150 130 L 330 130 L 330 210" stroke="url(#power-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="110" class="wire-label">Relay VCC</text>
+            <!-- 18. Green LED GND -->
+            <path d="M 500 1380 L 500 1500 L 505 1500 L 505 865" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-            <!-- Relay GND to Breadboard GND -->
-            <path d="M 1270 450 L 1150 450 L 1150 380 L 370 380 L 370 700" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="800" y="400" class="wire-label">Relay GND</text>
+            <!-- 19. Red LED GND -->
+            <path d="M 800 1380 L 800 1500 L 510 1500 L 510 865" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-            <!-- Relay IN (Yellow) to Arduino D7 -->
-            <path d="M 1270 470 L 1100 470 L 1100 440 L 635 440 L 635 325" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="900" y="450" class="wire-label">IN → D7</text>
+            <!-- 20. DFPlayer to Speaker -->
+            <path d="M 1580 575 L 1300 575 L 1300 1380 L 1125 1380" stroke="#ff9900" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1250" y="970" class="wire-label" font-size="13">⑱ Audio Out</text>
 
-            <!-- Arduino D7 to Breadboard -->
-            <path d="M 50 325 L 0 325 L 0 450 L 635 450 L 635 325" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="200" y="460" class="wire-label">D7</text>
+            <!-- 21. Relay NO to Mist Maker -->
+            <path d="M 1580 865 L 1600 865 L 1600 1380 L 1350 1380" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1620" y="1120" class="wire-label" font-size="13">⑲ Mist Power</text>
 
-            <!-- Relay COM to Power Bank USB (via breadboard) -->
-            <path d="M 1400 430 L 1500 430 L 1500 100 L 150 100 L 150 90" stroke="url(#power-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="1300" y="115" class="wire-label">COM → +5V USB</text>
+            <!-- 22. Mist Maker GND -->
+            <path d="M 1350 1360 L 1280 1360 L 1280 1500 L 510 1500 L 510 865" stroke="url(#ground-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="1100" y="1480" class="wire-label" font-size="13">⑳ Mist GND</text>
 
-            <!-- Relay NO to Mist Maker Positive -->
-            <path d="M 1400 450 L 1450 450 L 1450 750 L 1350 750" stroke="#ff0000" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="1400" y="600" class="wire-label">Mist (+)</text>
-
-            <!-- Green LED Anode (D5) -->
-            <path d="M 50 275 L 20 275 L 20 700 L 1100 700 L 1100 730" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="500" y="680" class="wire-label">D5 → Green LED</text>
-
-            <!-- Green LED Cathode to GND -->
-            <path d="M 1100 765 L 1100 850 L 1100 900 L 370 900 L 370 740" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-
-            <!-- Red LED Anode (D6) -->
-            <path d="M 50 300 L 10 300 L 10 720 L 1250 720 L 1250 730" stroke="url(#signal-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="500" y="700" class="wire-label">D6 → Red LED</text>
-
-            <!-- Red LED Cathode to GND -->
-            <path d="M 1250 765 L 1250 860 L 1250 900 L 370 900 L 370 740" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-
-            <!-- Mist Maker Negative to GND Rail -->
-            <path d="M 1350 800 L 1300 800 L 1300 920 L 370 920 L 370 740" stroke="url(#ground-grad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="1150" y="880" class="wire-label">Mist (−) → GND</text>
-
-            <!-- Speaker to DFPlayer SPK+ -->
-            <path d="M 1050 570 L 980 570 L 980 1100 L 1050 1100" stroke="#ff9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="1000" y="850" class="wire-label">SPK+</text>
-
-            <!-- Speaker to DFPlayer SPK- -->
-            <path d="M 1050 590 L 970 590 L 970 1110 L 1050 1110" stroke="#ff9900" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <text x="1000" y="870" class="wire-label">SPK−</text>
-
-            <!-- ===================== JUNCTION POINTS ===================== -->
-            <circle cx="330" cy="210" r="4" fill="#00ff00" opacity="0.9"/>
-            <circle cx="370" cy="700" r="4" fill="#00ff00" opacity="0.9"/>
-            <circle cx="870" cy="210" r="4" fill="#00ff00" opacity="0.9"/>
-            <circle cx="910" cy="700" r="4" fill="#00ff00" opacity="0.9"/>
+            <!-- Power Bank Connection to Breadboard -->
+            <path d="M 180 160 L 180 260 L 445 260 L 445 445" stroke="url(#power-grad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="300" y="210" class="wire-label" font-size="13">USB1 → +5V</text>
 
         </svg>
 
         <div class="legend">
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(90deg, #ff4444, #ff0000);"></div>
-                <span>Power (+5V) Lines</span>
+                <span style="font-size: 16px;"><strong>RED = Power (+5V)</strong> Supplies electricity</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(90deg, #444444, #000000);"></div>
-                <span>Ground (GND) Lines</span>
+                <span style="font-size: 16px;"><strong>BLACK = Ground (GND)</strong> Return path</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(90deg, #00ff00, #00cc00);"></div>
-                <span>Digital Signal Lines (D pins)</span>
+                <span style="font-size: 16px;"><strong>GREEN = Signals</strong> Arduino digital pins</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(90deg, #ffff00, #ffcc00);"></div>
-                <span>Serial Data Lines (TX/RX)</span>
+                <span style="font-size: 16px;"><strong>YELLOW = Data</strong> Serial communication</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: linear-gradient(90deg, #00ffff, #00ccff);"></div>
-                <span>I²C Communication (SDA/SCL)</span>
+                <span style="font-size: 16px;"><strong>CYAN = I²C</strong> I2C communication</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color" style="background: #ff9900;"></div>
-                <span>Speaker/Audio Lines</span>
+                <span style="font-size: 16px;"><strong>ORANGE = Audio</strong> Speaker connections</span>
             </div>
         </div>
 
         <div class="info-box">
-            <strong>Accurate Breadboard Connection Map:</strong><br>
-            <ul style="margin-left: 20px; margin-top: 8px;">
-                <li><strong>Power Rails:</strong> Left (+5V, GND) and Right (+5V, GND) rails are connected horizontally</li>
-                <li><strong>MQ-137 Sensor:</strong> VCC → +5V Rail | GND → GND Rail | AO → Arduino A0</li>
-                <li><strong>LCD Display:</strong> VCC → +5V | GND → GND | SDA (A4) → Arduino A4 | SCL (A5) → Arduino A5</li>
-                <li><strong>DFPlayer Mini:</strong> VCC → +5V | GND → GND | TX → Arduino D10 | RX (1kΩ) → Arduino D11</li>
-                <li><strong>Relay Module:</strong> VCC → +5V | GND → GND | IN → Arduino D7 | COM → Power Bank USB</li>
-                <li><strong>LED Indicators:</strong> Green (D5) & Red (D6) with 220Ω resistors to GND</li>
-                <li><strong>Mist Maker:</strong> (+) → Relay NO | (−) → GND</li>
+            <strong style="font-size: 18px;">📋 Complete Connection Guide (20 Wire Connections)</strong><br><br>
+            
+            <strong>POWER CONNECTIONS:</strong>
+            <ul>
+                <li>① Arduino 5V → Breadboard +5V Rail (provides power to all sensors)</li>
+                <li>② Arduino GND → Breadboard GND Rail (completes the circuit)</li>
+                <li>③ MQ-137 VCC → Breadboard +5V (powers ammonia sensor)</li>
+                <li>④ MQ-137 GND → Breadboard GND (ammonia sensor return)</li>
+                <li>⑥ LCD VCC → Breadboard +5V (powers display)</li>
+                <li>⑦ LCD GND → Breadboard GND (display return)</li>
+                <li>⑨ DFPlayer VCC → Breadboard +5V (powers audio module)</li>
+                <li>⑩ DFPlayer GND → Breadboard GND (audio return)</li>
+                <li>⑬ Relay VCC → Breadboard +5V (powers relay)</li>
+                <li>⑭ Relay GND → Breadboard GND (relay return)</li>
+            </ul>
+
+            <strong>SENSOR & DATA CONNECTIONS:</strong>
+            <ul>
+                <li>⑤ MQ-137 AO (Analog Out) → Arduino A0 (reads ammonia level)</li>
+                <li>⑧ LCD I²C → Arduino A4/A5 (displays sensor readings)</li>
+                <li>⑪ DFPlayer TX → Arduino D10 (receives audio commands)</li>
+                <li>⑫ DFPlayer RX → Arduino D11 (sends audio data)</li>
+                <li>⑮ Relay IN → Arduino D7 (controls mist maker)</li>
+            </ul>
+
+            <strong>OUTPUT CONNECTIONS:</strong>
+            <ul>
+                <li>⑯ Arduino D5 → Green LED (shows normal operation)</li>
+                <li>⑰ Arduino D6 → Red LED (shows high ammonia alert)</li>
+                <li>⑱ DFPlayer → Speaker (plays alert sounds)</li>
+                <li>⑲ Relay NO → Mist Maker (activates ultrasonic mist)</li>
+                <li>⑳ Mist Maker → Breadboard GND (completes mist circuit)</li>
             </ul>
         </div>
     </div>
